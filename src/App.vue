@@ -1,11 +1,20 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <HeroBanner></HeroBanner>
+  </div>
 </template>
 
 <script>
+import HeroBanner from "./components/HeroBanner.vue";
+
 export default {
-  name: "app"
+  name: "app",
+  components: {
+    HeroBanner
+  }
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "./scss/main.scss";
+</style>
