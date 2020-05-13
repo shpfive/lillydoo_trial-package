@@ -1,0 +1,141 @@
+// utility classes
+// text
+.text{
+    // fontsizes
+    &--xx-small{
+    font-size: var(--xx-small);
+    }
+    &--x-small{
+        font-size: var(--x-small);
+    }
+    &--default{
+        font-size: var(--default);
+    }
+    &--medium{
+        font-size: var(--medium);
+    }
+    &--x-large{
+        font-size: var(--x-large);
+    }
+    &--xx-large{
+        font-size: var(--xx-large);
+    }
+    // alignment
+    &--align-left{
+        text-align: left;
+    }
+    &--align-center{
+        text-align: center;
+    }
+    &--align-right{
+        text-align: right;
+    }
+    // fontfamily
+    &--primary-regular{
+        font-family: var(--font--primary);
+    }
+    &--primary-regular{
+        font-family: var(--font--primary);
+    }
+    &--secondary{
+        font-family: var(--font--secondary);
+    }
+    // utilities
+    &--uppercase{
+        text-transform: uppercase;
+    }
+    &--bold{
+        font-weight: var(--font-bold);
+    }
+    &--thin{
+        font-weight: var(--font-light);
+    }
+}
+// color
+.color{
+    &--primary{
+        color: var(--primary-color)
+    }
+    &--secondary{
+        color: var(--secondary-color)
+    }
+    &--black{
+        color: var(--black)
+    }
+    &--white{
+        color: var(--white)
+    }
+    &--grey-100{
+        color: var(--grey-100)
+    }
+    &--grey-200{
+        color: var(--grey-200)
+    }
+    &--grey-300{
+        color: var(--grey-300)
+    }
+    &--grey-400{
+        color: var(--grey-400)
+    }
+    &--grey-500{
+        color: var(--grey-500)
+    }
+}
+.bg-color{
+    &--primary{
+        background: var(--primary-color)
+    }
+    &--secondary{
+        background: var(--secondary-color)
+    }
+    &--black{
+        background: var(--black)
+    }
+    &--white{
+        background: var(--white)
+    }
+    &--grey-100{
+        background: var(--grey-100)
+    }
+    &--grey-200{
+        background: var(--grey-200)
+    }
+    &--grey-300{
+        background: var(--grey-300)
+    }
+    &--grey-400{
+        background: var(--grey-400)
+    }
+    &--grey-500{
+        background: var(--grey-500)
+    }
+}
+.border-color{
+    &--primary{
+        border-color: var(--primary-color)
+    }
+    &--secondary{
+        border-color: var(--secondary-color)
+    }
+    &--black{
+        border-color: var(--black)
+    }
+    &--white{
+        border-color: var(--white)
+    }
+    &--grey-100{
+        border-color: var(--grey-100)
+    }
+    &--grey-200{
+        border-color: var(--grey-200)
+    }
+    &--grey-300{
+        border-color: var(--grey-300)
+    }
+    &--grey-400{
+        border-color: var(--grey-400)
+    }
+    &--grey-500{
+        border-color: var(--grey-500)
+    }
+}

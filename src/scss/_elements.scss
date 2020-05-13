@@ -1,0 +1,16 @@
+// elements
+// button
+.btn{
+    appearance: none;
+    background: transparent;
+    border: none;
+    display: block;
+    width: 100%;
+    &--primary{
+        padding: var(--x-small);
+        background: var(--primary-color);
+        color: var(--white);
+        font-size: var(--regular);
+        text-transform: uppercase;
+    }
+}

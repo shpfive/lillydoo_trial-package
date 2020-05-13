@@ -1,0 +1,36 @@
+// colors
+:root{
+    --primary-color: #00afab;
+    --secondary-color: #00afab;
+    
+    --black: #000000;
+    --white: #ffffff;
+
+    --grey-100: #f8f8f8;
+    --grey-200: #cdcdcd;
+    --grey-300: #ffffff;
+    --grey-400: #ffffff;
+    --grey-500: #353535;
+}
+
+// size
+:root{
+    --xx-small:0.4rem;
+    --x-small:0.6rem;
+    --default:.938rem;
+    --medium:1.3rem;
+    --x-large:1.688rem;
+    --xx-large:2.625rem;
+
+    
+}
+
+// font
+:root{
+    --font--primary-regular: cera_proregular;
+    --font--primary-medium: cera_promedium;
+    --font--secondary: secondary;
+
+    --font-light: 200;
+    --font-bold: 700;
+}

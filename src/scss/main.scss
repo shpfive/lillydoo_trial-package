@@ -1,0 +1,25 @@
+// main styling
+@import 'utilities';
+@import 'fonts';
+@import 'elements';
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background: var(--white);
+    color: var(--black);
+    cursor: auto;
+    font-family: cera_proregular,Helvetica,Roboto,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
