@@ -1,5 +1,5 @@
 // elements
-// button
+// buttons
 .btn{
     appearance: none;
     background: transparent;
@@ -13,4 +13,9 @@
         font-size: var(--regular);
         text-transform: uppercase;
     }
+}
+
+//grids
+.cell{
+    width: 100%;
 }

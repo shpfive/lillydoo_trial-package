@@ -139,3 +139,140 @@
         border-color: var(--grey-500)
     }
 }
+
+// spacing
+.m{
+    margin: 1em;
+    &-top{
+        margin-top: 1em;
+    }
+    &-bottom{
+        margin-bottom: 1em;
+    }
+    &-left{
+        margin-left: 1em; 
+    }
+    &-right{
+        margin-right: 1em;
+    }
+    &--2{
+        margin: 2em;
+        &-top{
+            margin-top: 2em;
+        }
+        &-bottom{
+            margin-bottom: 2em;
+        }
+        &-left{
+            margin-left: 2em;
+        }
+        &-right{
+            margin-right: 2em;
+        }
+    }
+    &--3{
+        margin: 3em;
+        &-top{
+            margin-top: 3em;
+        }
+        &-bottom{
+            margin-bottom: 3em;
+        }
+        &-left{
+            margin-left: 3em;
+        }
+        &-right{
+            margin-right: 3em;
+        }
+    }
+    &--4{
+        margin: 4em;
+        &-top{
+            margin-top: 4em;
+        }
+        &-bottom{
+            margin-bottom: 4em;
+        }
+        &-left{
+            margin-left: 4em;
+        }
+        &-right{
+            margin-right: 4em;
+        }
+    }
+    &--auto{
+        margin: auto;
+        &-top{
+            margin-top: auto;
+        }
+        &-bottom{
+            margin-bottom: auto;
+        }
+        &-left{
+            margin-left: auto;
+        }
+        &-right{
+            margin-right: auto;
+        }
+    }
+}
+.p{
+    padding: 1em;
+    &-top{
+        padding-top: 1em;
+    }
+    &-bottom{
+        padding-bottom: 1em;
+    }
+    &-left{
+        padding-left: 1em;
+    }
+    &-right{
+        padding-right: 1em;
+    }
+    &--2{
+        padding: 2em;
+        &-top{
+            padding-top: 2em;
+        }
+        &-bottom{
+            padding-bottom: 2em;
+        }
+        &-left{
+            padding-left: 2em;
+        }
+        &-right{
+            padding-right: 2em;
+        }
+    }
+    &--3{
+        padding: 3em;
+        &-top{
+            padding-top: 3em;
+        }
+        &-bottom{
+            padding-bottom: 3em;
+        }
+        &-left{
+            padding-left: 3em;
+        }
+        &-right{
+            padding-right: 3em;
+        }
+    }
+    &--4{
+        padding: 4em;
+        &-top{
+            padding-top: 4em;
+        }
+        &-bottom{
+            padding-bottom: 4em;
+        }
+        &-left{
+            padding-left: 4em;
+        }
+        &-right{
+            padding-right: 4em;
+        }
+    }
+}
