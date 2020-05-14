@@ -1,6 +1,6 @@
 <template>
   <section class="hero-banner">
-    <div class="hero-banner--content cell p--regular">
+    <div class="hero-banner__content cell p--regular">
       <h1 class="text--xx-large text--secondary text--align-center text--thin">
         Dein gratis Testpaket
       </h1>
@@ -19,6 +19,7 @@ export default {};
 
 <style scoped lang="scss">
 .hero-banner {
+  height: 1em; // fix for vertical alignment in ie
   min-height: 70vh;
 
   display: flex;
@@ -38,11 +39,11 @@ export default {};
     align-items: center;
   }
 
-  &--content {
+  &__content {
     background-color: rgba(#ffffff, 0.7);
     padding: var(--x-large);
     @media all and (min-width: 50rem) {
-      max-width: 22em;
+      max-width: 30em;
       margin-right: 4em;
     }
     .btn {
