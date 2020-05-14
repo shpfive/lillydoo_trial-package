@@ -76,14 +76,15 @@ export default {
      */
     selectedTrialPackage() {
       if (!this.selectedTrialPackageId) return null;
-      return trialPackages.find(
-        trialPackage => trialPackage.id === this.selectedTrialPackageId
-      );
+      return this.getTrialPackageById(this.selectedTrialPackageId);
     }
   },
   mounted() {
-    // initialize trial package configurator
-    this.setInitialTrialPackageSelection();
+    // check if not selected and trialPackages given
+    if (!this.selectedTrialPackageId && this.trialPackages.length) {
+      // initialize trial package configurator
+      this.setInitialTrialPackageSelection();
+    }
   },
   methods: {
     /**
@@ -93,6 +94,7 @@ export default {
     setSelectedTrialPackage(id) {
       this.selectedTrialPackageId = id;
     },
+
     /**
      * sets initial trial package selection
      */
@@ -102,7 +104,17 @@ export default {
       // check query params
       size = this.getSizeQueryParam();
       //set if not null
+      if (size) {
+        const trialPackage = this.getTrialPackageBySize(size);
+        if (trialPackage) {
+          this.selectedTrialPackageId = trialPackage.id;
+          return;
+        }
+      }
+      // set first
+      this.selectedTrialPackageId = this.trialPackages[0].id;
     },
+
     /**
      * get size query param
      * @returns {number} size The query param
@@ -110,7 +122,25 @@ export default {
     getSizeQueryParam() {
       let uri = window.location.search.substring(1);
       let params = new URLSearchParams(uri);
-      return params.get("size");
+      return parseInt(params.get("size"));
+    },
+
+    /**
+     * get trialPacke by id
+     * @param {number} id The id of wanted package
+     * @returns {Object} trialPackage The trialPackage with given id
+     */
+    getTrialPackageById(id) {
+      return trialPackages.find(trialPackage => trialPackage.id === id);
+    },
+
+    /**
+     * get trialPacke by id
+     * @param {number} isize The size of wanted package
+     * @returns {Object} trialPackage The trialPackage with given size
+     */
+    getTrialPackageBySize(size) {
+      return trialPackages.find(trialPackage => trialPackage.size === size);
     }
   }
 };
