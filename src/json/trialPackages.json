@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "TESTPAKET GRÖSSE 1",
+        "size": 1,
+        "sizeHint": "2-5 KG",
+        "image": "/products/lillydoo-testpaket-10.jpg",
+        "products": {
+            "diapers": {
+                "name": "10 LILLYDOO Windeln",
+                "features": [
+                    "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
+                    "Extra weich und super bequem",
+                    "Mit unseren Turbo Tunneln für eine ideale Passform und schnelle Absorption"
+                ],
+                "ratings": {
+                    "amount": 12,
+                    "stars": 9
+                }
+            },
+            "wipes": {
+                "name": "15 Feuchttücher mit 99 % Wasser",
+                "features": [
+                    "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
+                    "Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
+                ],
+                "ratings": {
+                    "amount": 115,
+                    "stars": 9
+                }
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "TESTPAKET GRÖSSE 2",
+        "size": 2,
+        "sizeHint": "4-8 KG",
+        "image": "/products/lillydoo-testpaket-20.jpg",
+        "products": {
+            "diapers": {
+                "name": "10 LILLYDOO Windeln",
+                "features": [
+                    "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
+                    "Extra weich und super bequem",
+                    "Mit unseren Turbo Tunneln für eine ideale Passform und schnelle Absorption"
+                ],
+                "ratings": {
+                    "amount": 92,
+                    "stars": 9
+                }
+            },
+            "wipes": {
+                "name": "15 Feuchttücher mit 99 % Wasser",
+                "features": [
+                    "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
+                    "Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
+                ],
+                "ratings": {
+                    "amount": 115,
+                    "stars": 9
+                }
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "TESTPAKET GRÖSSE 3",
+        "size": 3,
+        "sizeHint": "6-10 KG",
+        "image": "/products/lillydoo-testpaket-30.jpg",
+        "products": {
+            "diapers": {
+                "name": "10 LILLYDOO Windeln",
+                "features": [
+                    "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
+                    "Extra weich und super bequem",
+                    "Mit unseren Turbo Tunneln für eine ideale Passform und schnelle Absorption"
+                ],
+                "ratings": {
+                    "amount": 329,
+                    "stars": 9
+                }
+            },
+            "wipes": {
+                "name": "15 Feuchttücher mit 99 % Wasser",
+                "features": [
+                    "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
+                    "Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
+                ],
+                "ratings": {
+                    "amount": 115,
+                    "stars": 9
+                }
+            }
+        }
+    },
+    {
+        "id": 4,
+        "name": "TESTPAKET GRÖSSE 4",
+        "size": 4,
+        "sizeHint": "9-14 KG",
+        "image": "/products/lillydoo-testpaket-40.jpg",
+        "products": {
+            "diapers": {
+                "name": "10 LILLYDOO Windeln",
+                "features": [
+                    "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
+                    "Extra weich und super bequem",
+                    "Mit unseren Turbo Tunneln für eine ideale Passform und schnelle Absorption"
+                ],
+                "ratings": {
+                    "amount": 485,
+                    "stars": 9
+                }
+            },
+            "wipes": {
+                "name": "15 Sensitive Feuchttücher",
+                "features": [
+                    "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
+                    "Extra dickes und kompostierbares Tuch"
+                ],
+                "ratings": {
+                    "amount": 46,
+                    "stars": 8
+                }
+            }
+        }
+    },
+    {
+        "id": 5,
+        "name": "TESTPAKET GRÖSSE 5",
+        "size": 5,
+        "sizeHint": "11-16 KG",
+        "image": "/products/lillydoo-testpaket-50.jpg",
+        "products": {
+            "diapers": {
+                "name": "10 LILLYDOO Windeln",
+                "features": [
+                    "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
+                    "Extra weich und super bequem",
+                    "Mit unseren Turbo Tunneln für eine ideale Passform und schnelle Absorption"
+                ],
+                "ratings": {
+                    "amount": 388,
+                    "stars": 9
+                }
+            },
+            "wipes": {
+                "name": "15 Sensitive Feuchttücher",
+                "features": [
+                    "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
+                    "Extra dickes und kompostierbares Tuch"
+                ],
+                "ratings": {
+                    "amount": 46,
+                    "stars": 8
+                }
+            }
+        }
+    }
+]
