@@ -7,10 +7,10 @@
     display: block;
     width: 100%;
     &--primary{
-        padding: var(--x-small);
+        padding: var(--default);
         background: var(--primary-color);
         color: var(--white);
-        font-size: var(--regular);
+        font-size: var(--default);
         text-transform: uppercase;
     }
 }
