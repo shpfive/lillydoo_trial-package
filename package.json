@@ -20,7 +20,10 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
+    "install": "^0.13.0",
     "node-sass": "^4.12.0",
+    "npm": "^6.14.5",
+    "postcss-css-variables": "^0.17.0",
     "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.10"
@@ -41,7 +44,8 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-css-variables": {}
     }
   },
   "browserslist": [

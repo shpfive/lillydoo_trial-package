@@ -1,13 +1,13 @@
 // fonts
 @font-face {
     font-family: secondary;
-    src: url('fonts/328921_0_0.woff2');
+    src: url('fonts/328921_0_0.woff2') format('woff2'), url('fonts/328921_0_0.woff') format('woff') url('fonts/328921_0_0.ttf') format('ttf');
 }
 @font-face {
     font-family: cera_proregular;
-    src: url('fonts/CeraPRO-Regular.woff2');
+    src: url('fonts/CeraPRO-Regular.woff2') format('woff2'),url('fonts/CeraPRO-Regular.woff') format('woff'),url('fonts/CeraPRO-Regular.ttf') format('ttf');
 }
 @font-face {
     font-family: cera_promedium;
-    src: url('fonts/CeraPRO-Medium.woff2'); 
+    src: url('fonts/CeraPRO-Medium.woff2') format('woff2'), url('fonts/CeraPRO-Medium.woff') format('woff'), url('fonts/CeraPRO-Medium.ttf') format('ttf'); 
 }
