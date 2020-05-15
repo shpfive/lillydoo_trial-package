@@ -10,7 +10,7 @@
           <div
             v-for="trialPackage in trialPackages"
             :key="trialPackage.id"
-            @click="setSelectedTrialPackage(trialPackage.id)"
+            @click="setSelectedTrialPackage(trialPackage)"
             class="selection__btn text--center"
             :class="{
               'selection__btn-active':
@@ -63,23 +63,14 @@
 
 <script>
 // use json as api example
-import trialPackages from "@/json/trialPackages.json";
+import { mapGetters, mapMutations } from "vuex";
 export default {
-  data() {
-    return {
-      trialPackages,
-      selectedTrialPackageId: null
-    };
-  },
   computed: {
-    /**
-     * selected trial package by selectedTrialPackageId
-     * @returns {Object} trialPackage The trialPackage with given selectedTrialPackageId
-     */
-    selectedTrialPackage() {
-      if (!this.selectedTrialPackageId) return null;
-      return this.getTrialPackageById(this.selectedTrialPackageId);
-    }
+    ...mapGetters({
+      trialPackages: "trialPackages/trialPackages",
+      selectedTrialPackageId: "trialPackages/selectedTrialPackageId",
+      selectedTrialPackage: "trialPackages/selectedTrialPackage"
+    })
   },
   mounted() {
     // check if not selected and trialPackages given
@@ -89,14 +80,9 @@ export default {
     }
   },
   methods: {
-    /**
-     * select package by packageId
-     * @param {number} id The id of clicked package
-     */
-    setSelectedTrialPackage(id) {
-      this.selectedTrialPackageId = id;
-    },
-
+    ...mapMutations({
+      setSelectedTrialPackage: "trialPackages/setSelectedTrialPackage"
+    }),
     /**
      * sets initial trial package selection
      */
@@ -109,12 +95,12 @@ export default {
       if (size) {
         const trialPackage = this.getTrialPackageBySize(size);
         if (trialPackage) {
-          this.selectedTrialPackageId = trialPackage.id;
+          this.setSelectedTrialPackage(trialPackage);
           return;
         }
       }
       // set first
-      this.selectedTrialPackageId = this.trialPackages[0].id;
+      this.setSelectedTrialPackage(this.trialPackages[0]);
     },
 
     /**
@@ -126,23 +112,15 @@ export default {
       let params = new URLSearchParams(uri);
       return parseInt(params.get("size"));
     },
-
-    /**
-     * get trialPacke by id
-     * @param {number} id The id of wanted package
-     * @returns {Object} trialPackage The trialPackage with given id
-     */
-    getTrialPackageById(id) {
-      return trialPackages.find(trialPackage => trialPackage.id === id);
-    },
-
     /**
      * get trialPacke by id
      * @param {number} isize The size of wanted package
      * @returns {Object} trialPackage The trialPackage with given size
      */
     getTrialPackageBySize(size) {
-      return trialPackages.find(trialPackage => trialPackage.size === size);
+      return this.trialPackages.find(
+        trialPackage => trialPackage.size === size
+      );
     }
   }
 };
@@ -155,7 +133,7 @@ export default {
   margin: 0 auto;
   display: grid;
   grid-template-areas:
-    "configurator"
+    "selection"
     "image"
     "details";
   grid-gap: 1em;
