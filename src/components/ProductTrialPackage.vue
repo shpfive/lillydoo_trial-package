@@ -1,7 +1,7 @@
 <template>
   <section class="product-trial-package content-element">
     <h2 class="text--align-center">Dein Testpaket enthält</h2>
-    <div class="trial-package-contains">
+    <div class="trial-package-contains" v-if="selectedTrialPackage">
       <div
         class="trial-package-contains__product"
         v-for="product in selectedTrialPackage.products"
