@@ -9,7 +9,7 @@
       >
         <div class="trial-package-contains__product__image">
           <img
-            :src="product.image"
+            v-lazy="product.image"
             :alt="product.name + ' Produktbild'"
             :title="product.name"
           />

@@ -5,7 +5,7 @@
       <div class="steps__step text--align-center m--2-top">
         <img
           class="steps__step__image m-bottom"
-          src="/howTo/lillydoo-your-trialbox-icon.svg"
+          v-lazy="'/howTo/lillydoo-your-trialbox-icon.svg'"
           alt="trialbox icon"
           title="Dein Tespaket"
         />
@@ -18,7 +18,7 @@
       <div class="steps__step  text--align-center m--2-top">
         <img
           class="steps__step__image m-bottom"
-          src="/howTo/lillydoo-your-flexibility-icon.svg"
+          v-lazy="'/howTo/lillydoo-your-flexibility-icon.svg'"
           alt="flexibility icon"
           title="Deine Flexibilität"
         />
@@ -34,7 +34,7 @@
       <div class="steps__step text--align-center m--2-top">
         <img
           class="steps__step__image m-bottom"
-          src="/howTo/lillydoo-your-subscription-icon.svg"
+          v-lazy="'/howTo/lillydoo-your-subscription-icon.svg'"
           alt="subscription icon"
           title="Deine Monatsbox"
         />

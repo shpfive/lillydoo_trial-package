@@ -4,7 +4,10 @@
     <ConfiguratorTrialPackage></ConfiguratorTrialPackage>
     <HowTo></HowTo>
     <ProductTrialPackage></ProductTrialPackage>
-    <div class="page-end"></div>
+    <div
+      v-lazy:background-image="'/generall/pusteblume-pattern-04.png'"
+      class="page-end"
+    ></div>
   </div>
 </template>
 
