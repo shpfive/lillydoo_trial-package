@@ -45,10 +45,10 @@
         text-transform: uppercase;
     }
     &--bold{
-        font-weight: var(--font-bold);
+        font-weight: var(--font--bold);
     }
     &--thin{
-        font-weight: var(--font-light);
+        font-weight: var(--font--light);
     }
 }
 // color
@@ -275,4 +275,9 @@
             padding-right: 4em;
         }
     }
+}
+
+// layout
+.content-element{
+    padding: 2em 1em;
 }

@@ -1,6 +1,8 @@
 // colors
 :root{
     --primary-color: #00afab;
+    --primary-color-dark: #009793;
+
     --secondary-color: #00afab;
     
     --black: #000000;
@@ -21,6 +23,7 @@
     --medium:1.3rem;
     --x-large:1.688rem;
     --xx-large:2.625rem;
+    --max-width: 80rem;
 }
 
 // font
@@ -29,6 +32,6 @@
     --font--primary-medium: cera_promedium;
     --font--secondary: secondary;
 
-    --font-light: 200;
-    --font-bold: 700;
+    --font--light: 200;
+    --font--bold: 700;
 }

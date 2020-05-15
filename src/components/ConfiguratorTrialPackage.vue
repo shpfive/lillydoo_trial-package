@@ -1,60 +1,62 @@
 <template>
-  <section class="trial-package p--2-top p--2-bottom m--auto">
-    <div class="cell p-left p-right trial-package__configurator">
-      <h2 class="text--x-large">Dein gratis Testpaket</h2>
-      <p class="text--regular text--uppercase m-top m-bottom">
-        Wähle deine Größe
-      </p>
-      <div class="configurator">
-        <div
-          v-for="trialPackage in trialPackages"
-          :key="trialPackage.id"
-          @click="setSelectedTrialPackage(trialPackage.id)"
-          class="configurator__btn text--center"
-          :class="{
-            'configurator__btn-active':
-              trialPackage.id === selectedTrialPackageId
-          }"
-        >
-          <p class="text--medium">{{ trialPackage.size }}</p>
-          <label class="text--x-small">
-            {{ trialPackage.sizeHint }}
-          </label>
+  <section class="trial-package content-element">
+    <div class="configurator">
+      <div class="cell p-left p-right configurator__selection">
+        <h2 class="text--x-large">Dein gratis Testpaket</h2>
+        <p class="text--regular text--uppercase m-top m-bottom">
+          Wähle deine Größe
+        </p>
+        <div class="selection">
+          <div
+            v-for="trialPackage in trialPackages"
+            :key="trialPackage.id"
+            @click="setSelectedTrialPackage(trialPackage.id)"
+            class="selection__btn text--center"
+            :class="{
+              'selection__btn-active':
+                trialPackage.id === selectedTrialPackageId
+            }"
+          >
+            <p class="text--medium">{{ trialPackage.size }}</p>
+            <label class="text--x-small">
+              {{ trialPackage.sizeHint }}
+            </label>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="cell p-left p-right trial-package__image">
-      <img
-        class="trial-package__image__oekotex"
-        src="/products/oekotex_green_de.svg"
-        alt="Oeko-Tex Certificate"
-      />
-      <img
-        class=""
-        v-if="selectedTrialPackage"
-        :src="selectedTrialPackage.image"
-        :alt="'Produktbild' + selectedTrialPackage.name"
-        :title="selectedTrialPackage.name"
-      />
-    </div>
-    <div class="cell p-left p-right trial-package__details">
-      <p class="text--regular">
-        Teste jetzt unsere Windel und Feuchttücher - in Größe 1 - 3 enthält dein
-        Testpaket unsere Feuchttücher mit 99 % Wasser, ab Größe 4 erhälst Du
-        unsere Sensitiven Feuchttücher. Wir zahlen die Produkte,
-        <span class="text--bold">Du nur den Versand.</span>
-      </p>
-      <ul>
-        <li class="color--primary">
-          Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50 €
-          pro Lieferung.
-        </li>
-        <li>
-          Preise inkl. MwSt., ggf. zzgl.
-          <span class="color--primary">Versandkosten</span>
-        </li>
-      </ul>
-      <button class="btn btn--primary">In den Warenkorb legen</button>
+      <div class="cell p-left p-right configurator__image">
+        <img
+          class="configurator__image__oekotex"
+          src="/products/oekotex_green_de.svg"
+          alt="Oeko-Tex Certificate"
+        />
+        <img
+          class=""
+          v-if="selectedTrialPackage"
+          :src="selectedTrialPackage.image"
+          :alt="'Produktbild' + selectedTrialPackage.name"
+          :title="selectedTrialPackage.name"
+        />
+      </div>
+      <div class="cell p-left p-right configurator__details">
+        <p class="text--regular">
+          Teste jetzt unsere Windel und Feuchttücher - in Größe 1 - 3 enthält
+          dein Testpaket unsere Feuchttücher mit 99 % Wasser, ab Größe 4 erhälst
+          Du unsere Sensitiven Feuchttücher. Wir zahlen die Produkte,
+          <span class="text--bold">Du nur den Versand.</span>
+        </p>
+        <ul>
+          <li class="color--primary">
+            Automatischer Übergang ins jederzeit kündbare Windel-Abo für 49,50 €
+            pro Lieferung.
+          </li>
+          <li>
+            Preise inkl. MwSt., ggf. zzgl.
+            <span class="color--primary">Versandkosten</span>
+          </li>
+        </ul>
+        <button class="btn btn--primary">In den Warenkorb legen</button>
+      </div>
     </div>
   </section>
 </template>
@@ -147,25 +149,26 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.trial-package {
-  max-width: 80rem;
+.configurator {
+  max-width: var(--max-width);
   width: 100%;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
     "configurator"
     "image"
     "details";
   grid-gap: 1em;
-  @media all and (min-width: 53.5rem) {
+  @media all and (min-width: 52rem) {
     grid-template-columns: 1.3fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
-      "image configurator"
+      "image selection"
       "image details";
   }
 
-  &__configurator {
-    grid-area: configurator;
+  &__selection {
+    grid-area: selection;
   }
   &__image {
     grid-area: image;
@@ -176,7 +179,7 @@ export default {
       max-width: 35rem;
       margin: 0 auto;
     }
-    .trial-package__image__oekotex {
+    .configurator__image__oekotex {
       position: absolute;
       margin-left: 6%;
       width: 30%;
@@ -190,7 +193,7 @@ export default {
   }
 }
 
-.configurator {
+.selection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
   grid-gap: 1em;
