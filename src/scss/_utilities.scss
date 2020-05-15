@@ -143,6 +143,9 @@
 // spacing
 .m{
     margin: 1em;
+    &--0{
+        margin: 0;
+    }
     &-top{
         margin-top: 1em;
     }
@@ -218,6 +221,9 @@
 }
 .p{
     padding: 1em;
+    &--0{
+        padding: 0;
+    }
     &-top{
         padding-top: 1em;
     }
@@ -279,5 +285,5 @@
 
 // layout
 .content-element{
-    padding: 2em 1em;
+    padding: 2em 0;
 }
