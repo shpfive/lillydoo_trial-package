@@ -7,7 +7,9 @@
         "image": "/products/lillydoo-testpaket-10.jpg",
         "products": {
             "diapers": {
+                "id": 1001,
                 "name": "10 LILLYDOO Windeln",
+                "image": "/products/lillydoo-little-blowballs-design-preview-tp.png",
                 "features": [
                     "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
                     "Extra weich und super bequem",
@@ -19,7 +21,9 @@
                 }
             },
             "wipes": {
+                "id": 2001,
                 "name": "15 Feuchttücher mit 99 % Wasser",
+                "image": "/products/water-wipes-15-small.png",
                 "features": [
                     "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
                     "Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
@@ -39,7 +43,9 @@
         "image": "/products/lillydoo-testpaket-20.jpg",
         "products": {
             "diapers": {
+                "id": 1002,
                 "name": "10 LILLYDOO Windeln",
+                "image": "/products/lillydoo-little-blowballs-design-preview-tp.png",
                 "features": [
                     "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
                     "Extra weich und super bequem",
@@ -51,7 +57,9 @@
                 }
             },
             "wipes": {
+                "id": 2001,
                 "name": "15 Feuchttücher mit 99 % Wasser",
+                "image": "/products/water-wipes-15-small.png",
                 "features": [
                     "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
                     "Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
@@ -71,7 +79,9 @@
         "image": "/products/lillydoo-testpaket-30.jpg",
         "products": {
             "diapers": {
+                "id": 1003,
                 "name": "10 LILLYDOO Windeln",
+                "image": "/products/lillydoo-little-blowballs-design-preview-tp.png",
                 "features": [
                     "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
                     "Extra weich und super bequem",
@@ -83,7 +93,9 @@
                 }
             },
             "wipes": {
+                "id": 2001,
                 "name": "15 Feuchttücher mit 99 % Wasser",
+                "image": "/products/water-wipes-15-small.png",
                 "features": [
                     "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
                     "Natürlich rein, extra mild, Alternative zu \"Wasser & Watte\""
@@ -103,7 +115,9 @@
         "image": "/products/lillydoo-testpaket-40.jpg",
         "products": {
             "diapers": {
+                "id": 1004,
                 "name": "10 LILLYDOO Windeln",
+                "image": "/products/lillydoo-little-blowballs-design-preview-tp.png",
                 "features": [
                     "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
                     "Extra weich und super bequem",
@@ -115,7 +129,9 @@
                 }
             },
             "wipes": {
+                "id": 2002,
                 "name": "15 Sensitive Feuchttücher",
+                "image": "/products/sensitive-wipes-15-small.jpg",
                 "features": [
                     "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
                     "Extra dickes und kompostierbares Tuch"
@@ -135,7 +151,9 @@
         "image": "/products/lillydoo-testpaket-50.jpg",
         "products": {
             "diapers": {
+                "id": 1005,
                 "name": "10 LILLYDOO Windeln",
+                "image": "/products/lillydoo-little-blowballs-design-preview-tp.png",
                 "features": [
                     "0 % Parfüme & Lotionen, 100 % LILLYDOO Schutz",
                     "Extra weich und super bequem",
@@ -147,7 +165,9 @@
                 }
             },
             "wipes": {
+                "id": 2002,
                 "name": "15 Sensitive Feuchttücher",
+                "image": "/products/sensitive-wipes-15-small.jpg",
                 "features": [
                     "0 % Parfüme & PEGs, 100 % biologisch abbaubar",
                     "Extra dickes und kompostierbares Tuch"
