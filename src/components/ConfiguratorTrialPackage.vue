@@ -108,6 +108,7 @@ export default {
      * @returns {number} size The query param
      */
     getSizeQueryParam() {
+      if (typeof URLSearchParams !== "function") return null;
       let uri = window.location.search.substring(1);
       let params = new URLSearchParams(uri);
       return parseInt(params.get("size"));
