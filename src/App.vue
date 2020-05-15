@@ -3,6 +3,7 @@
     <HeroBanner></HeroBanner>
     <ConfiguratorTrialPackage></ConfiguratorTrialPackage>
     <HowTo></HowTo>
+    <div class="page-end"></div>
   </div>
 </template>
 
