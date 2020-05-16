@@ -33,25 +33,14 @@
 
 <script>
 import { mapGetters } from "vuex";
-import CustomerRatings from "@/components/CustomerRatings.vue";
 export default {
   components: {
-    CustomerRatings
+    CustomerRatings: () => import("@/components/CustomerRatings.vue")
   },
   computed: {
     ...mapGetters({
       selectedTrialPackage: "trialPackages/selectedTrialPackage"
-    }),
-    diapers() {
-      if (this.selectedTrialPackage && this.selectedTrialPackage.diapers)
-        return this.selectedTrialPackage.diapers;
-      return null;
-    },
-    wipes() {
-      if (this.selectedTrialPackage && this.selectedTrialPackage.wipes)
-        return this.selectedTrialPackage.wipes;
-      return null;
-    }
+    })
   }
 };
 </script>
