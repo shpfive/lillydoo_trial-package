@@ -12,18 +12,16 @@
 </template>
 
 <script>
-import HeroBanner from "./components/HeroBanner.vue";
-import ConfiguratorTrialPackage from "./components/ConfiguratorTrialPackage.vue";
-import HowTo from "./components/HowTo.vue";
-import ProductTrialPackage from "./components/ProductTrialPackage.vue";
+import HeroBanner from "@/components/HeroBanner.vue";
+import ConfiguratorTrialPackage from "@/components/ConfiguratorTrialPackage.vue";
 
 export default {
   name: "app",
   components: {
     HeroBanner,
     ConfiguratorTrialPackage,
-    HowTo,
-    ProductTrialPackage
+    HowTo: () => import("@/components/HowTo.vue"),
+    ProductTrialPackage: () => import("@/components/ProductTrialPackage.vue")
   }
 };
 </script>
