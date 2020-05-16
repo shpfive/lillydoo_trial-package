@@ -78,7 +78,7 @@ export default {
       }
     }
     &__details {
-      width: 100%;
+      width: 65%;
     }
   }
 }

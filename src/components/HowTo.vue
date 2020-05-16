@@ -65,7 +65,7 @@ export default {};
     width: 100%;
     padding: 0 1em;
     @media all and (min-width: 52rem) {
-      width: calc(100% / 3);
+      width: 33%;
     }
   }
 }

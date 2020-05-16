@@ -4,7 +4,7 @@
       <div class="cell p-left p-right configurator__selection">
         <h2 class="text--x-large">Dein gratis Testpaket</h2>
         <p class="text--regular text--uppercase m-top m-bottom">
-          Wähle deine Größe
+          Wähle deine Grösse
         </p>
         <div class="selection">
           <div
@@ -173,10 +173,16 @@ export default {
 }
 
 .selection {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
-  grid-gap: 1em;
+  display: flex;
+  margin: -0.5em;
+  flex-wrap: wrap;
   &__btn {
+    margin: 0.5em;
+    min-width: 3.5em;
+    width: calc((100% / 5) - 1em);
+    max-width: calc((100% / 4) - 1em);
+    flex-grow: 1;
+    padding: 0.25em;
     cursor: pointer;
     text-align: center;
     p {
