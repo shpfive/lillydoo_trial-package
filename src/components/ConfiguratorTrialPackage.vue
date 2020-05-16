@@ -1,5 +1,5 @@
 <template>
-  <section class="trial-package content-element">
+  <section id="trialbox" class="trial-package content-element">
     <div class="configurator">
       <div class="cell p-left p-right configurator__selection">
         <h2 class="text--x-large">Dein gratis Testpaket</h2>
@@ -18,7 +18,7 @@
             }"
           >
             <p class="text--medium">{{ trialPackage.size }}</p>
-            <label class="text--x-small">
+            <label class="text--small">
               {{ trialPackage.sizeHint }}
             </label>
           </div>
@@ -55,17 +55,20 @@
             <span class="color--primary">Versandkosten</span>
           </li>
         </ul>
-        <button class="btn btn--primary">In den Warenkorb legen</button>
+        <button class="btn btn--primary" @click="addToBasket()">
+          In den Warenkorb legen
+        </button>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-// use json as api example
+// map store to component
 import { mapGetters, mapMutations } from "vuex";
 export default {
   computed: {
+    // data from store
     ...mapGetters({
       trialPackages: "trialPackages/trialPackages",
       selectedTrialPackageId: "trialPackages/selectedTrialPackageId",
@@ -75,11 +78,12 @@ export default {
   mounted() {
     // check if not selected and trialPackages given
     if (!this.selectedTrialPackageId && this.trialPackages.length) {
-      // initialize trial package configurator
+      // initialize trialPackage Selection
       this.setInitialTrialPackageSelection();
     }
   },
   methods: {
+    // methods from store
     ...mapMutations({
       setSelectedTrialPackage: "trialPackages/setSelectedTrialPackage"
     }),
@@ -87,7 +91,7 @@ export default {
      * sets initial trial package selection
      */
     setInitialTrialPackageSelection() {
-      // size
+      // helper
       let size = null;
       // check query params
       size = this.getSizeQueryParam();
@@ -114,14 +118,20 @@ export default {
       return parseInt(params.get("size"));
     },
     /**
-     * get trialPacke by id
-     * @param {number} isize The size of wanted package
-     * @returns {Object} trialPackage The trialPackage with given size
+     * get trialPacke by size
+     * @param {number} size The size of wanted package
+     * @returns {Object} trialPackage The found trialPackage with given size
      */
     getTrialPackageBySize(size) {
       return this.trialPackages.find(
         trialPackage => trialPackage.size === size
       );
+    },
+    /**
+     * set selected trial package to basket
+     */
+    addToBasket() {
+      alert("add size " + this.selectedTrialPackage.size + " to basket");
     }
   }
 };
@@ -178,7 +188,7 @@ export default {
   flex-wrap: wrap;
   &__btn {
     margin: 0.5em;
-    min-width: 3.5em;
+    min-width: 4em;
     width: calc((100% / 5) - 1em);
     max-width: calc((100% / 4) - 1em);
     flex-grow: 1;

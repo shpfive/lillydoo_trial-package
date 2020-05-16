@@ -4,11 +4,12 @@
       <h1 class="text--secondary text--align-center text--thin">
         Entdecke unsere Hautfreunlichkeit
       </h1>
-      <button
+      <a
         class="btn btn--primary m--auto-left m--auto-right m-top text--center"
+        href="#trialbox"
       >
         Wähle deine Größe
-      </button>
+      </a>
     </div>
   </section>
 </template>
