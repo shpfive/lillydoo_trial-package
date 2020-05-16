@@ -27,7 +27,7 @@
           Erste Monatsbox nach 14 Tagen für 49,50&nbsp;€ erhalten. Oder noch vor
           der ersten Lieferung kündigen.
         </p>
-        <a class="m--4-top">
+        <a class="m--4-top" href="https://www.lillydoo.com/de/windel-abo">
           Erfahre hier mehr über das <br />LILLYDOO Windel-Abo.
         </a>
       </div>
