@@ -35,7 +35,11 @@ p{
 
 a{
     color: var(--primary-color);
+    text-decoration: none;
     &:hover{
         color: var(--primary-color--dark)
+    }
+    &:focus{
+        color: var(--primary-color--light)
     }
 }
