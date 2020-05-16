@@ -20,7 +20,7 @@
             :stars="product.ratings.stars"
             :amount="product.ratings.amount"
           ></CustomerRatings>
-          <ul class="p--0 p-left">
+          <ul class="p--0 p-left p--2-bottom">
             <li v-for="(feature, index) in product.features" :key="index">
               {{ feature }}
             </li>
@@ -51,7 +51,7 @@ export default {
 .trial-package-contains {
   max-width: var(--max-width);
   width: 100%;
-  margin: 2em auto;
+  margin: 2em auto 0;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
