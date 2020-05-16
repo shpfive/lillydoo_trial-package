@@ -16,7 +16,10 @@
         </div>
         <div class="trial-package-contains__product__details">
           <h3 class="text--uppercase">{{ product.name }}</h3>
-          <p>{{ product.ratings.stars }}* ({{ product.ratings.amount }})</p>
+          <CustomerRatings
+            :stars="product.ratings.stars"
+            :amount="product.ratings.amount"
+          ></CustomerRatings>
           <ul class="p--0 p-left">
             <li v-for="(feature, index) in product.features" :key="index">
               {{ feature }}
@@ -30,7 +33,11 @@
 
 <script>
 import { mapGetters } from "vuex";
+import CustomerRatings from "@/components/CustomerRatings.vue";
 export default {
+  components: {
+    CustomerRatings
+  },
   computed: {
     ...mapGetters({
       selectedTrialPackage: "trialPackages/selectedTrialPackage"
