@@ -1,8 +1,8 @@
 <template>
   <section class="hero-banner">
     <div class="hero-banner__content cell p--regular">
-      <h1 class="text--xx-large text--secondary text--align-center text--thin">
-        Dein gratis Testpaket
+      <h1 class="text--secondary text--align-center text--thin">
+        Entdecke unsere Hautfreunlichkeit
       </h1>
       <button
         class="btn btn--primary m--auto-left m--auto-right m-top text--center"
@@ -31,10 +31,10 @@ export default {};
   background-size: cover;
   background-position: 50% 0;
 
-  @media all and (min-width: 23rem) {
+  @media all and (min-width: 24rem) {
     background-image: url("/heroBanner/header-trialbox-tablet.jpg");
   }
-  @media all and (min-width: 50rem) {
+  @media all and (min-width: 52rem) {
     background-image: url("/heroBanner/header-trialbox-desktop.jpg");
     align-items: center;
   }
@@ -42,12 +42,18 @@ export default {};
   &__content {
     background-color: rgba(#ffffff, 0.7);
     padding: var(--x-large);
-    @media all and (min-width: 50rem) {
+    @media all and (min-width: 52rem) {
       max-width: 30em;
       margin-right: 4em;
     }
     .btn {
       max-width: 15em;
+    }
+  }
+  h1 {
+    font-size: var(--x-large);
+    @media all and (min-width: 24rem) {
+      font-size: var(--xx-large);
     }
   }
 }
