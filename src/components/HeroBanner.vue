@@ -2,7 +2,7 @@
   <section class="hero-banner">
     <div class="hero-banner__content cell p--regular">
       <h1 class="text--secondary text--align-center text--thin">
-        Entdecke unsere Hautfreunlichkeit
+        Entdecke unsere Hautfreundlichkeit
       </h1>
       <a
         class="btn btn--primary m--auto-left m--auto-right m-top text--center"
