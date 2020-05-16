@@ -6,12 +6,22 @@
     border: none;
     display: block;
     width: 100%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1em;
     &--primary{
         padding: var(--default);
         background: var(--primary-color);
         color: var(--white);
         font-size: var(--default);
         text-transform: uppercase;
+        &:hover{
+            background-color: var(--primary-color-dark);
+        }
+        &:focus{
+            background-color: var(--primary-color-light);
+        }
     }
 }
 

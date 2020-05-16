@@ -8,11 +8,17 @@
     &--x-small{
         font-size: var(--x-small);
     }
+    &--small{
+        font-size: var(--small);
+    }
     &--default{
         font-size: var(--default);
     }
     &--medium{
         font-size: var(--medium);
+    }
+    &--large{
+        font-size: var(--large);
     }
     &--x-large{
         font-size: var(--x-large);
