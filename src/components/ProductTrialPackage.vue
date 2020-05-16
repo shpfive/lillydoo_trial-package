@@ -32,12 +32,14 @@
 </template>
 
 <script>
+// map store to component
 import { mapGetters } from "vuex";
 export default {
   components: {
     CustomerRatings: () => import("@/components/CustomerRatings.vue")
   },
   computed: {
+    // data from store
     ...mapGetters({
       selectedTrialPackage: "trialPackages/selectedTrialPackage"
     })

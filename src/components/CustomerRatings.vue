@@ -19,10 +19,12 @@
 <script>
 export default {
   props: {
+    // amount of available ratings
     amount: {
       type: Number,
       default: 0
     },
+    // defines stars | 0 - 10 with 1 step for half a star
     stars: {
       type: Number,
       default: 0

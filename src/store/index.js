@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import trialPackages from "./modules/trialPackages"; // trial package store
+import trialPackages from "./modules/trialPackages"; // trial package store module
 
 Vue.use(Vuex);
 
